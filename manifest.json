@@ -2,15 +2,15 @@
   "manifest_version": 2,
 
   "name": "我的插件",
-  "description": "This extension shows a Google Image search result for the current page",
+  "description": "插件的简介",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "imgs/plu.png",
+    "default_popup": "welcome.html"
   },
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "https://www.baidu.com/"
+  ] 
 }
