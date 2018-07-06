@@ -4,11 +4,41 @@
   "name": "我的插件",
   "description": "插件的简介",
   "version": "1.0",
+  
+  "icons":
+    {
+        "16": "imgs/logo.png",
+        "48": "imgs/logo.png",
+        "128": "imgs/logo.png"
+    },
 
+	"background":
+    {
+
+        "page": "welcome.html"
+    },
+  
+ 
+  "content_scripts": [
+        {
+            "matches": ["https://www.baidu.com/*"],
+            "run_at": "document_end",
+            "js": ["js/jquery.min.js", "js/test.js"]
+        }
+    ],
+  
   "browser_action": {
-    "default_icon": "imgs/plu.png",
-    "default_popup": "welcome.html"
+    "default_icon": "imgs/logo.png",
+    "default_popup": "welcome.html",
+	"default_title": "鼠标放到插件上所显示的文字"
   },
+  
+
+
+
+  
+  
+  
   "permissions": [
     "activeTab",
     "https://www.baidu.com/"
